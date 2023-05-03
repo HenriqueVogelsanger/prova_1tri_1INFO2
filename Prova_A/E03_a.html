@@ -7,11 +7,12 @@
     */
 
     //ENTRADA
-
-
-    //PROCESSAMENTO
-
+const atividade1 = Number(prompt("Qual foi sua nota na atividade 1?"))
+const atividade2 = Number(prompt("Qual foi sua nota na atividade 2?"))
+const atividade3 = Number(prompt("Qual foi sua nota na atividade 3?"))
+//PROCESSAMENTO
+const nota = ((atividade1 * 0.3) + (atividade2 * 0.4) + (atividade3 * 0.3) )
 
     //SAÍDA
-
+document.write(`A nota que o aluno recebeu no final do trimestre foi de ${nota}`)
 </script>

@@ -11,11 +11,12 @@
     */
 
     //ENTRADA
-
-
-    //PROCESSAMENTO
-
+const normal = Number(prompt("Quanto custa o ingresso normal?").replace(",","."))
+const camarote = Number(prompt("Quanto custa o ingresso para o camarote?").replace(",","."))
+const VIP = Number(prompt("Quanto custa o ingresso VIP?").replace(",","."))
+//PROCESSAMENTO
+const precoMedio = (normal + camarote + VIP) /3
 
     //SAÍDA
-
+document.write(`O preco medio do ingresso é de R$${precoMedio.toFixed(2).replace(",",".")}.`)
 </script>

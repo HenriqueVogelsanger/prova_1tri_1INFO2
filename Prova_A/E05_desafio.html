@@ -8,11 +8,12 @@
     */
 
     //ENTRADA
+const kmLitro = Number(prompt("Quantos quilometros sua moto anda por litro?"))
+const quilometragem = Number(prompt("Qual a quilometragem da sua moto?"))
 
-
-    //PROCESSAMENTO
-
-
+//PROCESSAMENTO
+const km = (kmLitro * quilometragem) 
+const preco = (km /2000) *200
     //SAÍDA
-
+document.write(`A quantidade de litros consumidos foi de ${km} e o custo total na revisao das motocicletas foi de R$ ${preco.toFixed(2).replace(",",".")}`)
 </script>

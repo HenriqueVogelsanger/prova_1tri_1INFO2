@@ -8,11 +8,12 @@
     */
 
     //ENTRADA
-
-
-    //PROCESSAMENTO
-
+const idade = Number(prompt("Qual a idade do seu pet?").replace(",","."))
+const precoConsulta = Number(prompt("Qual o preco da consulta anual do seu pet?").replace(",","."))
+const precoVacina = Number(prompt("Qual o preco das vacinas do seu pet?").replace(",","."))
+//PROCESSAMENTO
+const precoFinal = (precoConsulta + precoVacina) * idade
 
     //SAÍDA
-
+document.write(`O preco total gasto em toda a vida do pet é de R$ ${precoFinal.toFixed(2).replace(",",".")}`)
 </script>
